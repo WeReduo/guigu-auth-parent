@@ -1,6 +1,6 @@
 //
 //
-package com.ataguigu.model.vo;
+package com.atguigu.model.vo;
 
 import java.io.Serializable;
 
