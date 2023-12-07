@@ -1,4 +1,4 @@
-package com.ataguigu.system.config;
+package com.ataguigu.system.com.atguigu.system.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
