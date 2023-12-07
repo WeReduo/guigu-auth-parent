@@ -1,4 +1,4 @@
-package com.ataguigu.system.config;
+package com.ataguigu.system.config.exception;
 
 import com.ataguigu.common.result.Result;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -16,6 +16,12 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public Result error(Exception e){
         e.printStackTrace();
-        return Result.fail();
+
+        return Result.fail().message("执行了特定异常处理");
     }
+    public Result error(ArithmeticException e) {
+        e.printStackTrace();
+        return Result.fail().message("执行了特定异常处理");
+    }
+
 }
