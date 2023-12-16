@@ -1,6 +1,6 @@
 package com.ataguigu.system.test;
 
-import com.atguigu.model.system.SysRole;
+import com.ataguigu.model.system.SysRole;
 import com.ataguigu.system.mapper.SysRoleMapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.junit.jupiter.api.Test;
