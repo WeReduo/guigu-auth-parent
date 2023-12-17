@@ -72,6 +72,19 @@ public class SysRoleController {
         SysRole sysRole = sysRoleService.getById(id);
         return Result.ok(sysRole);
     }
+    @ApiOperation(value = "根据id查询")
+    @PostMapping("/findRoleById/{id}")
+    public Result findRoleById(@PathVariable Long id) {
+        SysRole sysRole = sysRoleService.getById(id);
+        return Result.ok(sysRole);
+    }
+    @ApiOperation(value = "新增角色")
+    @PostMapping("/save")
+    public Result save(@RequestBody SysRole role) {
+        sysRoleService.save(role);
+        return Result.ok();
+    }
+
 
     @ApiOperation(value = "修改角色")
     @PutMapping("/update")
