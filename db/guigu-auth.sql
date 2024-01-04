@@ -11,7 +11,7 @@
  Target Server Version : 50727
  File Encoding         : 65001
 
- Date: 29/12/2023 07:54:33
+ Date: 04/01/2024 14:46:24
 */
 
 SET NAMES utf8mb4;
@@ -34,7 +34,7 @@ CREATE TABLE `sys_dept`  (
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2018 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '组织机构' ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742475909597884419 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '组织机构' ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of sys_dept
@@ -56,6 +56,7 @@ INSERT INTO `sys_dept` VALUES (2012, '教学部门', 20, ',1,20,2012,', 1, '王�
 INSERT INTO `sys_dept` VALUES (2013, '教学部门', 30, ',1,30,2013,', 1, '李老师', '18567867895', 1, '2022-05-24 16:13:50', '2022-05-24 16:13:50', 0);
 INSERT INTO `sys_dept` VALUES (2016, 'Java学科', 2012, ',1,20,2012,2012,', 1, '张老师', '15090909909', 1, '2022-05-25 10:51:12', '2022-05-25 10:51:12', 0);
 INSERT INTO `sys_dept` VALUES (2017, '大数据学科', 2012, ',1,20,2012,2012,', 1, '李老师', '15090980989', 1, '2022-05-27 09:11:54', NULL, 0);
+INSERT INTO `sys_dept` VALUES (1742475909597884418, '23', 0, ',', 10, 'wang', '18934567890', 1, '2024-01-03 17:20:05', '2024-01-03 17:20:35', 0);
 
 -- ----------------------------
 -- Table structure for sys_login_log
@@ -72,13 +73,39 @@ CREATE TABLE `sys_login_log`  (
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统访问记录' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742479179770884098 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统访问记录' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_login_log
 -- ----------------------------
 INSERT INTO `sys_login_log` VALUES (1, 'admin', '0:0:0:0:0:0:0:1', 1, '登录成功', NULL, '2022-06-10 11:24:14', NULL, 0);
 INSERT INTO `sys_login_log` VALUES (2, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2022-06-10 11:53:43', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1741870102170578945, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 01:12:49', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1741871560140021761, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 01:18:37', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1741871560303599618, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 01:18:37', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1741876342598688769, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 01:37:37', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742033167977598978, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 12:00:47', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742033202408640513, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 12:00:55', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742071433531617282, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 14:32:50', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742073458520489986, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 14:40:53', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742122847691726850, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 17:57:08', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742122852267712514, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 17:57:09', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742135649776963585, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 18:48:00', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742166172809297921, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 20:49:18', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742191491268235265, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-02 22:29:54', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742444082422198273, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 15:13:36', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742444244800483329, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 15:14:15', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742448309328453634, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 15:30:24', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742450625481842689, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 15:39:36', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742451743909781506, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 15:44:03', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742452417573724162, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 15:46:44', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742470812352405505, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 16:59:49', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742471691935805441, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 17:03:19', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742471711590313985, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 17:03:24', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742471904213725186, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 17:04:10', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742471957066149889, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 17:04:22', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742473365807034370, 'wangqq', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 17:09:58', NULL, 0);
+INSERT INTO `sys_login_log` VALUES (1742479179770884097, 'admin', '127.0.0.1', 1, '登录成功', NULL, '2024-01-03 17:33:04', NULL, 0);
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -100,7 +127,7 @@ CREATE TABLE `sys_menu`  (
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `idx_parent_id`(`parent_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 35 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '菜单表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742474756524994562 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '菜单表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_menu
@@ -138,6 +165,8 @@ INSERT INTO `sys_menu` VALUES (31, 30, '查看', 2, NULL, NULL, 'bnt.sysOperLog.
 INSERT INTO `sys_menu` VALUES (32, 34, '登录日志', 1, 'sysLoginLog', 'system/sysLoginLog/list', '', 'el-icon-s-goods', 8, 1, '2022-05-26 16:36:13', '2022-06-09 09:39:24', 0);
 INSERT INTO `sys_menu` VALUES (33, 32, '查看', 2, NULL, NULL, 'bnt.sysLoginLog.list', NULL, 1, 1, '2022-05-26 16:36:31', '2022-06-09 09:36:36', 0);
 INSERT INTO `sys_menu` VALUES (34, 2, '日志管理', 0, 'log', 'ParentView', '', 'el-icon-tickets', 6, 1, '2022-05-31 13:23:07', '2022-06-09 09:39:22', 0);
+INSERT INTO `sys_menu` VALUES (1741871979352317954, 0, '测试', 0, '测试', 'Layout', '', '', 1, 1, '2024-01-02 01:20:16', '2024-01-02 01:20:16', 0);
+INSERT INTO `sys_menu` VALUES (1742474756524994561, 0, '测试2', 0, 'test2', 'Layout', '', '', 1, 1, '2024-01-03 17:15:30', '2024-01-03 17:15:30', 0);
 
 -- ----------------------------
 -- Table structure for sys_oper_log
@@ -163,7 +192,7 @@ CREATE TABLE `sys_oper_log`  (
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 64 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志记录' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742135806807511043 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志记录' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -231,6 +260,7 @@ INSERT INTO `sys_oper_log` VALUES (60, '菜单管理', 'INSERT', 'com.atguigu.sy
 INSERT INTO `sys_oper_log` VALUES (61, '菜单管理', 'INSERT', 'com.atguigu.system.controller.SysMenuController.save()', 'POST', 'MANAGE', 'admin', '', '/admin/system/sysMenu/save', '127.0.0.1', '{\"select\":false,\"icon\":\"\",\"type\":2,\"parentId\":36,\"path\":\"teacher/create\",\"sortValue\":1,\"component\":\"vod/teacher/form\",\"param\":{},\"name\":\"添加\",\"perms\":\"bnt.teacher.add\",\"id\":37,\"status\":1}', '{\"code\":200,\"message\":\"成功\"}', 1, '', NULL, '2022-06-10 15:28:27', NULL, 0);
 INSERT INTO `sys_oper_log` VALUES (62, '菜单管理', 'INSERT', 'com.atguigu.system.controller.SysMenuController.save()', 'POST', 'MANAGE', 'admin', '', '/admin/system/sysMenu/save', '127.0.0.1', '{\"select\":false,\"icon\":\"\",\"type\":2,\"parentId\":36,\"path\":\"teacher/edit/:id\",\"sortValue\":1,\"component\":\"vod/teacher/form\",\"param\":{},\"name\":\"修改\",\"perms\":\"bnt.teacher.update\",\"id\":38,\"status\":1}', '{\"code\":200,\"message\":\"成功\"}', 1, '', NULL, '2022-06-10 15:29:13', NULL, 0);
 INSERT INTO `sys_oper_log` VALUES (63, '菜单管理', 'INSERT', 'com.atguigu.system.controller.SysMenuController.save()', 'POST', 'MANAGE', 'admin', '', '/admin/system/sysMenu/save', '127.0.0.1', '{\"select\":false,\"icon\":\"\",\"type\":2,\"parentId\":36,\"path\":\"\",\"sortValue\":1,\"component\":\"\",\"param\":{},\"name\":\"查看\",\"perms\":\"bnt.teacher.list\",\"id\":39,\"status\":1}', '{\"code\":200,\"message\":\"成功\"}', 1, '', NULL, '2022-06-10 15:35:30', NULL, 0);
+INSERT INTO `sys_oper_log` VALUES (1742135806807511042, '角色管理', 'INSERT', 'com.atguigu.system.controller.SysRoleController.saveRole()', 'POST', 'MANAGE', 'admin', '', '/admin/system/sysRole/save', '127.0.0.1', '{\"param\":{},\"roleCode\":\"dsz\",\"roleName\":\"董事长\",\"id\":\"1742135806652321793\"}', '{\"code\":200,\"message\":\"成功\"}', 1, '', NULL, '2024-01-02 18:48:38', NULL, 0);
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -246,15 +276,17 @@ CREATE TABLE `sys_post`  (
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '岗位信息表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742445711670226946 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '岗位信息表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_post
 -- ----------------------------
 INSERT INTO `sys_post` VALUES (5, 'dsz', '董事长', '1', 1, '2022-05-24 10:33:53', NULL, 0);
 INSERT INTO `sys_post` VALUES (6, 'zjl', '总经理', '2', 1, '2022-05-24 10:34:08', NULL, 0);
-INSERT INTO `sys_post` VALUES (7, 'wz', '网咨', '', 1, '2022-05-27 08:56:41', '2022-05-27 08:56:41', 1);
-INSERT INTO `sys_post` VALUES (8, 'yyzj', '运营总监', '', 1, '2022-06-08 17:14:21', NULL, 0);
+INSERT INTO `sys_post` VALUES (7, 'wz', '网咨', '3', 1, '2024-01-02 14:46:49', '2024-01-02 14:46:49', 1);
+INSERT INTO `sys_post` VALUES (8, 'yyzj', '运营总监', '4', 0, '2024-01-02 20:37:33', '2024-01-02 20:37:33', 0);
+INSERT INTO `sys_post` VALUES (1742201479650889729, 'GM', '总监', '', 1, '2024-01-02 23:09:35', NULL, 0);
+INSERT INTO `sys_post` VALUES (1742445711670226945, 'zjlms', '总经理秘书', '', 1, '2024-01-03 15:20:05', NULL, 0);
 
 -- ----------------------------
 -- Table structure for sys_role
@@ -269,17 +301,16 @@ CREATE TABLE `sys_role`  (
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1740518743559233539 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742135806652321794 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_role
 -- ----------------------------
-INSERT INTO `sys_role` VALUES (1, '系统管理员', 'SYSTEM', '系统管理员', '2021-05-31 18:09:18', '2022-06-08 09:21:10', 0);
+INSERT INTO `sys_role` VALUES (1, '系统管理员', 'SYSTEM', '系统管理员', '2021-05-31 18:09:18', '2024-01-02 18:47:23', 1);
 INSERT INTO `sys_role` VALUES (2, '普通管理员', 'COMMON', '普通管理员', '2021-06-01 08:38:40', '2022-02-24 10:42:46', 0);
-INSERT INTO `sys_role` VALUES (8, '用户管理员', 'yhgly', '普通管理员', '2022-06-08 17:39:04', '2023-12-28 16:05:58', 1);
-INSERT INTO `sys_role` VALUES (1740516537820897282, '工作人员', 'WorkingPersonnel', '工作人员', '2023-12-29 07:34:14', '2023-12-29 07:36:38', 0);
-INSERT INTO `sys_role` VALUES (1740516988830212097, '用户管理员', 'yhgly', '用户管理员', '2023-12-29 07:36:02', '2023-12-29 07:36:44', 0);
-INSERT INTO `sys_role` VALUES (1740518743559233538, '普通员工', 'OrdinaryEmployees', NULL, '2023-12-29 07:43:00', '2023-12-29 07:43:00', 0);
+INSERT INTO `sys_role` VALUES (3, '普通管理员', 'COMMON', '普通管理员', '2024-01-02 18:46:43', '2024-01-02 18:47:19', 0);
+INSERT INTO `sys_role` VALUES (5, '董事长', 'dsz1', NULL, '2024-01-02 18:48:38', '2024-01-02 18:49:00', 0);
+INSERT INTO `sys_role` VALUES (8, '用户管理员', 'yhgly', NULL, '2022-06-08 17:39:04', '2022-06-08 17:39:04', 0);
 
 -- ----------------------------
 -- Table structure for sys_role_menu
@@ -353,15 +384,17 @@ CREATE TABLE `sys_user`  (
   `is_deleted` tinyint(3) NOT NULL DEFAULT 0 COMMENT '删除标记（0:可用 1:已删除）',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `idx_username`(`username`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1740256120607367170 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1742473715888812035 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (1, 'admin', '96e79218965eb72c92a549dd5a330112', 'admin', '15099909888', 'http://r61cnlsfq.hn-bkt.clouddn.com/7daa4595-dfde-45da-8513-c5c2b81d20cc', 1021, 5, NULL, 0, '2021-05-31 18:08:43', '2022-05-25 11:34:25', 0);
-INSERT INTO `sys_user` VALUES (2, 'wangqq', '96e79218965eb72c92a549dd5a330112', '王倩倩', '15010546381', 'http://r61cnlsfq.hn-bkt.clouddn.com/b09b3467-3d99-437a-bd2e-dd8c9be92bb8', 1022, 6, NULL, 0, '2022-02-08 10:35:38', '2022-05-25 15:58:31', 0);
-INSERT INTO `sys_user` VALUES (3, 'wanggang', '96e79218965eb72c92a549dd5a330112', '王刚', '18909098909', NULL, 1024, 5, NULL, 0, '2022-05-24 11:05:40', '2022-06-02 10:19:25', 0);
-INSERT INTO `sys_user` VALUES (1740256120607367169, 'wang111', '123456', '王德发', '15271898926', NULL, NULL, NULL, NULL, 0, '2023-12-28 14:19:26', '2023-12-28 14:19:26', 0);
+INSERT INTO `sys_user` VALUES (1, 'admin', '96e79218965eb72c92a549dd5a330112', 'admin', '15099909888', 'http://r61cnlsfq.hn-bkt.clouddn.com/7daa4595-dfde-45da-8513-c5c2b81d20cc', 1021, 5, NULL, 1, '2021-05-31 18:08:43', '2024-01-02 18:47:57', 0);
+INSERT INTO `sys_user` VALUES (2, 'wangqq', '96e79218965eb72c92a549dd5a330112', '王倩倩', '15010546381', 'http://r61cnlsfq.hn-bkt.clouddn.com/b09b3467-3d99-437a-bd2e-dd8c9be92bb8', 1022, 6, NULL, 1, '2022-02-08 10:35:38', '2022-05-25 15:58:31', 0);
+INSERT INTO `sys_user` VALUES (3, 'wanggang', '96e79218965eb72c92a549dd5a330112', '王刚', '18909098909', NULL, 1024, 5, NULL, 1, '2022-05-24 11:05:40', '2024-01-03 17:07:49', 0);
+INSERT INTO `sys_user` VALUES (4, '5', '96e79218965eb72c92a549dd5a330112', '王刚', '18909098909', NULL, NULL, NULL, NULL, NULL, '2024-01-02 19:11:37', '2024-01-02 19:12:02', 0);
+INSERT INTO `sys_user` VALUES (5, '6', '96e79218965eb72c92a549dd5a330112', '王刚', '18909098909', NULL, NULL, NULL, NULL, NULL, '2024-01-02 19:12:11', '2024-01-02 19:12:26', 0);
+INSERT INTO `sys_user` VALUES (1742473715888812034, '77', 'e10adc3949ba59abbe56e057f20f883e', '77', '15271898926', NULL, NULL, NULL, NULL, NULL, '2024-01-03 17:11:22', '2024-01-03 17:11:22', 0);
 
 -- ----------------------------
 -- Table structure for sys_user_role
@@ -377,13 +410,19 @@ CREATE TABLE `sys_user_role`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `idx_role_id`(`role_id`) USING BTREE,
   INDEX `idx_admin_id`(`user_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1740517301804982275 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户角色' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户角色' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_user_role
 -- ----------------------------
-INSERT INTO `sys_user_role` VALUES (1740516025964814338, 1, 1740256120607367169, '2023-12-29 07:32:12', '2023-12-29 07:32:12', 0);
-INSERT INTO `sys_user_role` VALUES (1740516599166787585, 1, 1, '2023-12-29 07:34:29', '2023-12-29 07:34:29', 0);
-INSERT INTO `sys_user_role` VALUES (1740517301804982274, 1740516537820897282, 2, '2023-12-29 07:37:16', '2023-12-29 07:37:16', 0);
+INSERT INTO `sys_user_role` VALUES (2, 2, 2, '2022-01-20 20:49:37', '2022-02-24 10:43:07', 0);
+INSERT INTO `sys_user_role` VALUES (3, 1, 1, '2022-05-19 10:37:27', '2022-05-24 16:55:53', 1);
+INSERT INTO `sys_user_role` VALUES (4, 2, 1, '2022-05-19 10:37:27', '2022-05-24 16:55:53', 1);
+INSERT INTO `sys_user_role` VALUES (5, 1, 1, '2022-05-24 16:55:53', '2022-05-24 16:55:53', 0);
+INSERT INTO `sys_user_role` VALUES (6, 2, 3, '2022-05-25 16:09:31', '2022-05-25 16:09:31', 0);
+INSERT INTO `sys_user_role` VALUES (7, 2, 4, '2022-06-02 11:08:14', '2022-06-02 11:15:36', 1);
+INSERT INTO `sys_user_role` VALUES (8, 2, 4, '2022-06-02 11:15:36', '2022-06-02 16:10:53', 1);
+INSERT INTO `sys_user_role` VALUES (9, 1, 4, '2022-06-02 11:15:36', '2022-06-02 16:10:53', 1);
+INSERT INTO `sys_user_role` VALUES (10, 1, 4, '2022-06-02 16:10:53', '2022-06-02 16:10:53', 0);
 
 SET FOREIGN_KEY_CHECKS = 1;
